@@ -1,0 +1,9 @@
+# Ignore Ansible Galaxy/Builder specific directories/files
+collections/
+roles/
+.ansible-builder/
+requirements.cache
+releasenotes/
+# Ignore linting or testing artifacts
+.ansible-lint
+test_results.xml
