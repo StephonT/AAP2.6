@@ -7,3 +7,4 @@ releasenotes/
 # Ignore linting or testing artifacts
 .ansible-lint
 test_results.xml
+ansible-navigator.log
