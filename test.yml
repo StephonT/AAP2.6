@@ -1,9 +1,9 @@
 ---
 - name: Testing AAP Project Creation
-  hosts: localhost
+  hosts: controller
   become: true
   tasks:
 
     - name: Display test message
       ansible.builtin.debug:
-        msg: "This is a test from {{ ansible_facts['hostname'] }}!"
+        msg: "This is a test from {{ inventory_hostname }}!"
