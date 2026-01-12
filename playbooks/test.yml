@@ -1,7 +1,7 @@
 ---
 - name: Testing AAP Project Creation
   hosts: controller
-  become: true
+  remote_user: automation
   tasks:
 
     - name: Display test message
