@@ -1,0 +1,19 @@
+---
+version: 3
+
+images:
+  base_image:
+    name: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8:latest
+
+dependencies:
+  galaxy: requirements.yml
+
+additional_build_files:
+  - src: files/ansible.cfg
+    dest: configs
+
+additional_build_steps:
+  prepend_base:
+    - RUN whoami
+  append_final:
+    - RUN ls -la /etc
