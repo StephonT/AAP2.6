@@ -1,0 +1,7 @@
+---
+- name: Playbook to create Projects in Ansible Controller
+  hosts: localhost
+  vars_files:
+    - aap_config/auth.yml
+  roles:
+    - role: infra.aap_configuration.controller_projects
